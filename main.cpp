@@ -13,9 +13,13 @@ int main (){
     m[1] = sin((M_PI/180) * a * (-1));
     m[2] = sin((M_PI/180) * a);
     m[3] = cos((M_PI/180) * a);
-    printf("%f,%f,\n,%f,%f", m[0], m[1], m[2], m[3]);
-    
 
+    printf("%.2f,%.2f\n%.2f,%.2f\n", m[0], m[1], m[2], m[3]);
+
+    float x2 = m[0] * x + m[1] * y;
+    float y2 = m[2] * x + m[3] * y;
+
+    printf("X os = %.2f, y os = %.2f\n", x2, y2);
 
 
 
